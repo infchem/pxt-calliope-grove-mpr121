@@ -1,0 +1,19 @@
+{
+    "name": "pxt-calliope-grove-mpr121",
+    "version": "0.0.1",
+    "description": "Grove I2C Touch Sensor",
+    "license": "MIT",
+    "dependencies": {
+        "core": "*"
+    },
+    "files": [
+        "grove-mpr121.ts",
+        "_locales/de/pxt-calliope-grove-mpr121-jsdoc-strings.json",
+        "_locales/de/pxt-calliope-grove-mpr121-strings.json"
+    ],
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/calliope-mini/pxt-calliope-grove-mpr121.git"
+    },
+    "public": false
+}
