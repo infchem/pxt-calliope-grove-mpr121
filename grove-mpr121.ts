@@ -45,7 +45,12 @@ namespace grove_mpr121 {
     export function touchedFeeler(): number {
 		pins.i2cWriteNumber(ADDRESS, 0x0000, NumberFormat.UInt16BE)
         let feeler: number[] = [256, 512, 1024, 2048, 4096, 8192, 16384, 32768, 1, 2, 4, 8]
-		return feeler.indexOf(pins.i2cReadNumber(ADDRESS, NumberFormat.UInt16BE));
+		let result = pins.i2cReadNumber(ADDRESS, NumberFormat.UInt16BE);
+		if (result==0) {
+			return -2;	// no feeler touched: -2
+		} else {
+			return feeler.indexOf(result); // multiple feelers touched: -1
+		}
         //return pins.i2cReadNumber(ADDRESS, NumberFormat.UInt16BE);		
     }
 }
