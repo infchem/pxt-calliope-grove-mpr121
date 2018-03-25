@@ -14,7 +14,7 @@ namespace grove_mpr121 {
      * Initialize MPR121 module.
      */
     //% weight=210
-    //% blockId=grove_mpr121_init block="initialisiere Grove I2C Touch Sensor"
+    //% blockId=grove_mpr121_init block="initialize Grove I2C Touch Sensor"
     //% blockExternalInputs=1
     //% parts="grove_mpr121"
     export function init(): void {
@@ -40,7 +40,7 @@ namespace grove_mpr121 {
      * Return touched feeler.
      */
     //% weight=209
-    //% blockId=grove_mpr121_feeler block="welcher Fühler wird berührt?"
+    //% blockId=grove_mpr121_feeler block="read feeler number"
     //% parts="grove_mpr121"
     export function touchedFeeler(): number {
 		pins.i2cWriteNumber(ADDRESS, 0x0000, NumberFormat.UInt16BE)
