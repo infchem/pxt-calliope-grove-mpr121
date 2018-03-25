@@ -1,4 +1,5 @@
 {
-  "grove_mpr121.init": "initialisiere den Grove I2C Touch Sensor",
-  "grove_mpr121.touchedFeeler": "lese Fühlernummer"
+  "grove_mpr121.init|block": "initialisiere den Grove I2C Touch Sensor",
+  "grove_mpr121.touchedFeeler|block": "lese Fühlernummer",
+  "{id:category}Grove_mpr121": "Grove_mpr121"
 }
