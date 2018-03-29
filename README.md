@@ -12,8 +12,7 @@ The read block returns the touched feeler id, -1 if multiple feelers are touched
 ## MakeCode JavaScript Example
 
 ```javascript
-grove_mpr121.init(
-)
+grove_mpr121.init()
 
 basic.forever(() => {
     basic.showNumber(grove_mpr121.touchedFeeler())
